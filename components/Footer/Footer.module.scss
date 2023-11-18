@@ -1,0 +1,62 @@
+@import "styles/adapriveFont";
+
+.containerFooter {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerIconWithDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.containerLabel {
+  position: relative;
+  width: 189px;
+  height: 30px;
+}
+
+.containerDescription {
+  font-family: Roboto;
+  @include adaptive-font(14, 11);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.containerIcons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.containerIcon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 768px) {
+  .containerFooter {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .containerFooter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .containerLabel {
+    width: 302px;
+    height: 48px;
+  }
+  .containerIconWithDescription {
+    align-items: center;
+    gap: 8px;
+  }
+}

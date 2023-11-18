@@ -1,0 +1,31 @@
+@import "styles/adapriveFont";
+.containerDescription {
+  color: #FFF;
+  font-family: Cera Pro;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 700px;
+  text-wrap: balance;
+}
+
+.title {
+  @include adaptive-font(18, 12);
+}
+
+.main {
+  font-weight: 700;
+  @include adaptive-font(70, 35);
+}
+.footer {
+  @include adaptive-font(24, 15);
+}
+
+@media (max-width: 390px) {
+  .containerDescription {
+    gap: 15px;
+  }
+}
