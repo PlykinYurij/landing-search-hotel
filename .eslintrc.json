@@ -1,37 +1,37 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "prefer-const": "warn",
-    "quotes": [
-      "warn",
-      "single"
-    ],
-    "jsx-quotes": [
-      "error",
-      "prefer-single"
-    ],
-    "max-len": [
-      "error",
-      {
-        "code": 130
-      }
-    ],
-    "comma-dangle": [
-      "warn",
-      "never"
-    ],
-    "semi": [
-      "warn",
-      "never"
-    ],
-    "no-unused-vars": [
-      "error",
-      {
-        "vars": "all",
-        "args": "after-used",
-        "ignoreRestSiblings": false
-      }
-    ],
-    "react-hooks/exhaustive-deps": "off"
-  }
+  "extends": "next/core-web-vitals"
+//  "rules": {
+//    "prefer-const": "warn",
+//    "quotes": [
+//      "warn",
+//      "single"
+//    ],
+//    "jsx-quotes": [
+//      "error",
+//      "prefer-single"
+//    ],
+//    "max-len": [
+//      "error",
+//      {
+//        "code": 130
+//      }
+//    ],
+//    "comma-dangle": [
+//      "warn",
+//      "never"
+//    ],
+//    "semi": [
+//      "warn",
+//      "never"
+//    ],
+//    "no-unused-vars": [
+//      "error",
+//      {
+//        "vars": "all",
+//        "args": "after-used",
+//        "ignoreRestSiblings": false
+//      }
+//    ],
+//    "react-hooks/exhaustive-deps": "off"
+//  }
 }
