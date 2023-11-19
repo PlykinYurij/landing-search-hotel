@@ -1,5 +1,5 @@
 import {useContext} from 'react'
-import {AppContext} from "@/app/page";
+import {AppContext} from "@/components/App/App";
 
 export function useAppContext() {
     const {openRightModal, closeRightModal} = useContext(AppContext)
