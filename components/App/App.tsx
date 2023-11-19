@@ -1,11 +1,11 @@
 'use client'
-import React, {createContext, useRef, useState} from 'react';
+import React, {createContext, useRef, useState} from 'react'
 import styles from './App.module.scss'
-import RightModal from "@/components/RightModal/RightModal";
-import {Header} from "@/components/Header/Header";
-import {BlockDescription} from "@/components/BlockDescription/BlockDescription";
-import {FormSearch} from "@/components/FormSearch/FormSearch";
-import {Footer} from "@/components/Footer/Footer";
+import RightModal from '@/components/RightModal/RightModal'
+import {Header} from '@/components/Header/Header'
+import {BlockDescription} from '@/components/BlockDescription/BlockDescription'
+import {FormSearch} from '@/components/FormSearch/FormSearch'
+import {Footer} from '@/components/Footer/Footer'
 
 export const AppContext = createContext<any>(null)
 
@@ -13,6 +13,7 @@ interface IDataRightModal {
     isOpen: boolean,
     Component: React.FC
 }
+
 const App = () => {
     const [dataRightModal, setDataRightModal] = useState<IDataRightModal>({
         isOpen: false,
@@ -41,7 +42,7 @@ const App = () => {
                 <header>
                     <Header/>
                 </header>
-                <main className={styles.main}>
+                <main id={'main'} className={styles.main}>
                     <div style={{width: '100%'}}>
                         <BlockDescription/>
                         <FormSearch/>
@@ -53,6 +54,6 @@ const App = () => {
             </AppContext.Provider>
         </div>
     )
-};
+}
 
-export default App;
+export default App

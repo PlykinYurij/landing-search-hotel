@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import styles from './CustomInput.module.scss'
 
 type inputType = 'text' | 'date' | 'number' | 'password'
@@ -24,7 +24,7 @@ const CustomInput = ({value, placeholder, type = 'text', onChange, min, max}: IC
             max={max}
             onChange={(event => onChange(event))}
         />
-    );
-};
+    )
+}
 
-export default CustomInput;
+export default CustomInput

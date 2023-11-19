@@ -1,11 +1,11 @@
 import styles from './Footer.module.scss'
-import Image from "next/image";
+import Image from 'next/image'
 import label from '@/assets/DRIVERAVE.svg'
 import whatsApp from '@/assets/Whatsapp.svg'
 import telegram from '@/assets/Instagram.svg'
 import vk from '@/assets/vk.svg'
 import email from '@/assets/Email.svg'
-import {Icon} from "@/components/UI/Icon/Icon";
+import {Icon} from '@/components/UI/Icon/Icon'
 
 const Footer = () => {
     return (

@@ -1,11 +1,11 @@
 'use client'
-import React, {useState} from 'react';
-import {useAppContext} from "@/hooks/useAppContext";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faXmark} from "@fortawesome/free-solid-svg-icons";
+import React, {useState} from 'react'
+import {useAppContext} from '@/hooks/useAppContext'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faXmark} from '@fortawesome/free-solid-svg-icons'
 import styles from './FormLogin.module.scss'
-import CustomInput from "@/components/UI/CustomInput/CustomInput";
-import Button from "@/components/UI/Button/Button";
+import CustomInput from '@/components/UI/CustomInput/CustomInput'
+import Button from '@/components/UI/Button/Button'
 
 interface IDataLogin {
     email: string,
@@ -88,7 +88,7 @@ const FormLogin = () => {
                 </form>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default FormLogin;
+export default FormLogin

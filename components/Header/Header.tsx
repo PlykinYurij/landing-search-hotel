@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image'
 import label from '@/assets/DRIVERAVE.svg'
 import styles from './Header.module.scss'
-import {ButtonAction} from "@/components/UI/ButtonAction/ButtonAction";
+import {ButtonAction} from '@/components/UI/ButtonAction/ButtonAction'
 
 const Header = () => {
     return (
@@ -13,7 +13,7 @@ const Header = () => {
                         alt={'label'}
                         fill
                         style={{
-                            objectFit: 'contain',
+                            objectFit: 'contain'
                         }}
                     />
                 </div>
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
 
         </header>
-    );
-};
+    )
+}
 
-export {Header};
+export {Header}

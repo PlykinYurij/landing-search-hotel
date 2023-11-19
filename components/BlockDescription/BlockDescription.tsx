@@ -1,4 +1,4 @@
-import styles from './BlockDescription.module.scss';
+import styles from './BlockDescription.module.scss'
 const BlockDescription = () => {
     return (
         <div className={styles.containerDescription}>

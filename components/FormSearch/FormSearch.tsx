@@ -1,11 +1,11 @@
 'use client'
-import CustomInput from "@/components/UI/CustomInput/CustomInput";
-import {useState} from "react";
+import CustomInput from '@/components/UI/CustomInput/CustomInput'
+import {useState} from 'react'
 import styles from './FormSearch.module.scss'
-import Button from "@/components/UI/Button/Button";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import Button from '@/components/UI/Button/Button'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 
 interface IDataSearch {
     city: string,

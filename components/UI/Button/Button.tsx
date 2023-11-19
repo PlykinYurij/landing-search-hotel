@@ -1,5 +1,5 @@
 'use client'
-import React, {ReactNode} from 'react';
+import React, {ReactNode} from 'react'
 import styles from './Button.module.scss'
 
 interface IButtonSearch {
@@ -12,7 +12,7 @@ const Button = ({children, onClick}: IButtonSearch) => {
         <button onClick={onClick} className={styles.button}>
             {children}
         </button>
-    );
-};
+    )
+}
 
-export default Button;
+export default Button

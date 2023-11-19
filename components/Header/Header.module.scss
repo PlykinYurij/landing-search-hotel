@@ -12,6 +12,23 @@
     max-width: 50%;
     width: 250px;
     height: 40px;
+    animation-name: animateImage;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateImage {
+    0% {
+        left: -250px;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 @media (max-width: 768px) {
