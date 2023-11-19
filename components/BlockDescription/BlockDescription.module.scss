@@ -1,7 +1,8 @@
 @import "styles/adaptiveFont";
+
 .containerDescription {
   color: #FFF;
-  font-family: Cera Pro;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: normal;
   display: flex;
@@ -17,9 +18,10 @@
 }
 
 .main {
-  font-weight: 700;
+  font-weight: 600;
   @include adaptive-font(70, 35);
 }
+
 .footer {
   @include adaptive-font(24, 15);
 }
