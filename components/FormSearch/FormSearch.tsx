@@ -5,6 +5,7 @@ import Button from '@/components/UI/Button/Button'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+import {getToday} from "@/functions/getToday";
 
 interface IDataSearch {
     city: string,
@@ -57,6 +58,7 @@ const FormSearch = () => {
                         value={dataSearch.dataStart}
                         onChange={(event) => onChangeData(event.target.value, 'dataStart')}
                         placeholder={'Когда'}
+                        min={getToday().substring(0, 10)}
                         type={'date'}
                     />
                 </div>
@@ -67,10 +69,11 @@ const FormSearch = () => {
                 </div>
                 <div className={styles.containerInput}>
                     <input
-                        value={dataSearch.dataStart}
+                        value={dataSearch.dataEnd}
                         onChange={(event) => onChangeData(event.target.value, 'dataEnd')}
                         placeholder={'Когда'}
                         type={'date'}
+                        min={dataSearch.dataStart || getToday().substring(0, 10)}
                     />
                 </div>
             </div>
