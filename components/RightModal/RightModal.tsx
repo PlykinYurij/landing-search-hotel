@@ -1,10 +1,14 @@
 'use client'
 
-import React, {useEffect} from 'react'
+import React from 'react'
 import styles from './RightModal.module.scss'
 import {useAppContext} from '@/hooks/useAppContext'
 
-const RightModal = ({Component}: any) => {
+interface IRightModalProps {
+    Component: React.FC
+}
+
+const RightModal = ({Component}: IRightModalProps) => {
     const {closeRightModal} = useAppContext()
 
     return (

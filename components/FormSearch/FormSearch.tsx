@@ -1,5 +1,4 @@
 'use client'
-import CustomInput from '@/components/UI/CustomInput/CustomInput'
 import {useState} from 'react'
 import styles from './FormSearch.module.scss'
 import Button from '@/components/UI/Button/Button'

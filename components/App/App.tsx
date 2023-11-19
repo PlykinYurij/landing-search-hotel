@@ -1,5 +1,5 @@
 'use client'
-import React, {createContext, useRef, useState} from 'react'
+import React, {createContext, useState} from 'react'
 import styles from './App.module.scss'
 import RightModal from '@/components/RightModal/RightModal'
 import {Header} from '@/components/Header/Header'
@@ -19,7 +19,6 @@ const App = () => {
         isOpen: false,
         Component: () => <></>
     })
-    const refRightModal = useRef(null)
 
     function openRightModal(component: React.FC) {
         setDataRightModal({
