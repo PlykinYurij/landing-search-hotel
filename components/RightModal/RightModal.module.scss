@@ -1,0 +1,41 @@
+.modalDialog {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(106, 26, 0, 0.30);
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.contentRightModal {
+  height: 100vh;
+  max-width: 560px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  animation-name: rightModal;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rightModal {
+  0% {
+    right: -560px;
+  }
+  100% {
+    right: 0;
+  }
+}

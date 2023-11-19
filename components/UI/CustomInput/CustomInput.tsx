@@ -16,6 +16,7 @@ interface ICustomInputProps {
 const CustomInput = ({value, placeholder, type = 'text', onChange, min, max}: ICustomInputProps) => {
     return (
         <input
+            className={styles.myInput}
             placeholder={placeholder}
             value={value}
             type={type}

@@ -1,4 +1,4 @@
-@import "styles/adapriveFont";
+@import "styles/adaptiveFont";
 
 .containerForm {
   width: 100%;
@@ -25,7 +25,7 @@
 
 .label {
   color: #6B6B6B;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   @include adaptive-font(14, 11);
   font-weight: 400;
 }

@@ -1,4 +1,4 @@
-@import "styles/adapriveFont";
+@import "styles/adaptiveFont";
 
 .containerFooter {
   padding: 20px 40px;
@@ -21,7 +21,7 @@
 }
 
 .containerDescription {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   @include adaptive-font(14, 11);
   font-style: normal;
   font-weight: 400;
